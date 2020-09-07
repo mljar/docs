@@ -39,5 +39,7 @@ extra:
         - text: 'Ubuntu'
         - code: 'Ubuntu Mono'
 
+edit_uri: https://github.com/mljar/docs/edit/master/docs/
+
 copyright: Copyright © MLJAR, Inc.
 
