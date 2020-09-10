@@ -1,9 +1,15 @@
-# Modes
+# AutoML Modes
+
+There are built-in modes available in `AutoML`:
+
+- **Explain** - to be used when the user wants to explain and understand the data. 
+- **Perform** - to be used when the user wants to train a model that will be used in real-life use cases.
+- **Compete** - To be used for machine learning competitions (maximum performance!).
 
 | | |**AutoML Modes**| |
 |--- |--- |--- |--- |
 ||**Explain**|**Perform**|**Compete**|
-|*Algorithms*| | | |
+|| | ***Algorithms***| |
 |Baseline|:fontawesome-solid-check:{: .green } |||
 |Linear|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |Decision Tree|:fontawesome-solid-check:{: .green } ||:fontawesome-solid-check:{: .green } |
@@ -16,14 +22,7 @@
 |Nearest Neighbors|||:fontawesome-solid-check:{: .green } |
 |Ensemble|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |Stacking|||:fontawesome-solid-check:{: .green } |
-|*Validation*| | ||
-||75%/25% train/test split|5-fold CV, Shuffle, Stratify| 10-fold CV, Shuffle, Stratify|
-|*Explanations*| | | |
-||`explain_level=2`|`explain_level=1`|`explain_level=0`|
-|Learning   curves|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
-|Importance   plots|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } ||
-|SHAP   plots|:fontawesome-solid-check:{: .green } |||
-|*Steps*||||
+|||***Steps***||
 |simple_algorithms|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |default_algorithms|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |not_so_random||:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
@@ -35,3 +34,10 @@
 |ensemble|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |stack|||:fontawesome-solid-check:{: .green } |
 |ensemble_stacked|||:fontawesome-solid-check:{: .green } |
+|| | ***Validation***||
+||75%/25% train/test split|5-fold CV, Shuffle, Stratify| 10-fold CV, Shuffle, Stratify|
+|||***Explanations***||
+||`explain_level=2`|`explain_level=1`|`explain_level=0`|
+|Learning   curves|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
+|Importance   plots|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } ||
+|SHAP   plots|:fontawesome-solid-check:{: .green } |||
