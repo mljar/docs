@@ -24,6 +24,13 @@ markdown_extensions:
     - pymdownx.superfences
     - admonition
     - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - mkdocstrings
 
 extra:
     social:
@@ -43,3 +50,10 @@ edit_uri: https://github.com/mljar/docs/edit/master/docs/
 
 copyright: Copyright © MLJAR, Inc.
 
+nav:
+  - Get started: index.md
+  - Features: features.md
+  - How can you help?: help.md
+  - AutoML API: api.md
+  - Tutorials:
+    - Classify Titanic passangers: tutorials/titanic.md

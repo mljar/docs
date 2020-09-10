@@ -1,2 +1,0 @@
-# Classify Titanic passangers
-
