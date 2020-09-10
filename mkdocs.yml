@@ -61,13 +61,14 @@ nav:
   - Get started: index.md
   - Features: 
     - Steps of AutoML: features/automl.md
-    - AutoML Modes: features/modes.md
+    - AutoML modes: features/modes.md
     - Golden Features: features/golden_features.md
     - Features Selection: features/features_selection.md
     - Algorithms: features/algorithms.md
     - Automated EDA: features/eda.md
     - Eplainability: features/explain.md
     
+  - Get help: get_help.md
   - How can you help?: help.md
   - AutoML API: api.md
   - Roadmad: roadmap.md

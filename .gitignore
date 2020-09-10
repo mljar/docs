@@ -1,2 +1,5 @@
 site
 venv
+.vscode/
+__pycache__/
+

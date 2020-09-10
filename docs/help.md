@@ -1,6 +1,6 @@
 # How can you help?
 
-Do you get amazing ML models and results with `AutoML`? 
+Do you get amazing results and ML models with `AutoML`? 
 
 Would you like to help with `mljar-supervised`?
 
@@ -36,7 +36,7 @@ You can select "Releases only" in "Watch" button (top right corner).
 
 ## Create GitHub issues
 
-If you find a bug :bug: or have a problem :construction: with `mljar-supervised` please create a [GitHub issue](https://github.com/mljar/mljar-supervised/issues/new). You can also suggest a new features there! :+1:
+If you found a bug :bug: or have a problem :construction: with `mljar-supervised` please create a [GitHub issue](https://github.com/mljar/mljar-supervised/issues/new). You can also suggest a new features there! :+1:
 
 You can also try to help others with their [issues](https://github.com/mljar/mljar-supervised/issues).
 
@@ -61,5 +61,7 @@ You can write a tutorial for others about how are you using `AutoML`. You can pu
 - MLJAR's [blog](https://mljar.com/blog) - please let me know if interested
 - [Towards Data Science](https://towardsdatascience.com/)
 - [Dev.to](https://dev.to/)
+- [FreeCodeCamp](https://www.freecodecamp.org)
+- Your blog or website
 
-When you have post ready I would love to read it and give you a feedback. I will also share it in my social accounts and paste a link in the documentation:+1:
+When you have post ready I would love to read it and give you a feedback. I will also share it in my social accounts and paste a link in the documentation. :+1:
