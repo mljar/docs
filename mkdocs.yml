@@ -27,6 +27,10 @@ markdown_extensions:
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
+    - attr_list
+    - def_list
+    - pymdownx.tasklist:
+        custom_checkbox: true
 
 plugins:
   - search
@@ -50,10 +54,23 @@ edit_uri: https://github.com/mljar/docs/edit/master/docs/
 
 copyright: Copyright © MLJAR, Inc.
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Get started: index.md
-  - Features: features.md
+  - Features: 
+    - Steps of AutoML: features/automl.md
+    - AutoML Modes: features/modes.md
+    - Golden Features: features/golden_features.md
+    - Features Selection: features/features_selection.md
+    - Algorithms: features/algorithms.md
+    - Automated EDA: features/eda.md
+    - Eplainability: features/explain.md
+    
   - How can you help?: help.md
   - AutoML API: api.md
+  - Roadmad: roadmap.md
   - Tutorials:
-    - Classify Titanic passangers: tutorials/titanic.md
+    - Classify Titanic Passangers: tutorials/titanic.md
+    - Classify Random Data: tutorials/random.md
