@@ -44,10 +44,11 @@ There are 3 built-in modes available in `AutoML`:
 |Importance   plots|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } ||
 |SHAP   plots|:fontawesome-solid-check:{: .green } |||
 | | |***Tuning***||
+|Parameters |`start_random_models=1`, `hill_climbing_steps=0`, `top_models_to_improve=0` |`start_random_models=5`, `hill_climbing_steps=2`, `top_models_to_improve=2`|`start_random_models=10`, `hill_climbing_steps=2`, `top_models_to_improve=3`|
 |Models with default hyperparemeters | `1`|`1`|`1`|
 |Models with **not_so_random** hyperparemeters | `0` |`4`|`9`|
 |`hill_climbing` steps | `0`|`2`|`2`|
-|Top models imporoved in `hill_climbing` step | `0`|`2`|`3`|
+|Top models imporoved in each `hill_climbing` step | `0`|`2`|`3`|
 |**Total models** tuned for each algorithm[^1] | `1`|about `9`[^2]|about `16`[^2]|
 
 
