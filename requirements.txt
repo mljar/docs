@@ -1,4 +1,4 @@
 mkdocs-material==5.5.12
 Pygments==2.6.1
-mljar-supervised
+git+https://github.com/mljar/mljar-supervised
 mkdocstrings

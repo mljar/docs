@@ -2,4 +2,4 @@
 
 ## `AutoML` class
 
-to be added
+::: supervised.automl.AutoML
