@@ -55,6 +55,16 @@ pip install -r requirements.txt
 pip install -r requirements_dev.txt
 ```
 
+Running in docker with Jupyter notebook:
+```
+FROM python:3.7-slim-buster
+RUN apt-get update && apt-get -y update
+RUN apt-get install -y build-essential python3-pip python3-dev
+RUN pip3 -q install pip --upgrade
+RUN pip3 install mljar-supervised jupyter
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+```
+
 
 ## Basic usage
 
