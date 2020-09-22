@@ -1,4 +1,4 @@
-# Run AutoML on random data
+# Run AutoML on random data - seeking signal in the data
 
 Have you ever consider using Machine Learning and wasn't sure about it? Would you like to know when using Machine Learning is justified? Would you like to know how to check if there is a 'signal' in your data? I've trained AutoML on random data an present results here to help you get a better ML understanding when to use ML and how good is your data. 
 
@@ -6,7 +6,7 @@ All experiments results and code is available at [GitHub](https://github.com/mlj
 
 ## The experiment
 
-I've generated 3 datasets with random data. Each has 10 columns and 1k, 5k, 10k of rows. The target for each dataset is a random vector of `{0, 1}` - so a binary classification problema. I've used [mljar-supervised](https://github.com/mljar/mljar-supervised) AutoML python package. I run AutoML in `Explain` mode and `feature_selection=True`. The AutoML will train:
+I've generated 3 datasets with random data. Each has 10 columns and 1k, 5k, 10k of rows. The target for each dataset is a random vector of `{0, 1}` - so a binary classification problem. I've used [mljar-supervised](https://github.com/mljar/mljar-supervised) AutoML python package. I run AutoML in `Explain` mode and `feature_selection=True`. The AutoML will train:
 
 - `Baseline` (returns the most frequent class as prediction),
 - `Decision Tree`,
@@ -17,7 +17,6 @@ I've generated 3 datasets with random data. Each has 10 columns and 1k, 5k, 10k 
 - `Ensemble`.
 
 AutoML will train above algorithms with default hyperparameters on `75%/25%` train/test data split. Additionally, full explanations will be produced for all models.
-
 
 
 ## The code
@@ -72,7 +71,7 @@ The first **red flag** :triangular_flag_on_post: - the `Baseline` model is much 
 
 ### The percentage improvement
 
-The % difference between the best model (`Ensemble`) and `Baseline`:
+The `% difference` between the best model (`Ensemble`) and `Baseline`:
 
 ```
 % difference = (0.6926 - 0.6837) / 0.6926 * 100.0 = 1.28%
@@ -113,11 +112,11 @@ The AutoML rasied the exception that all data looks like random! (see the [error
 
 ## Summary
 
-When training Machine Learning models it is always worth to check the `Baseline`. You will get the intuition about your data and problem you are solving.
+When training Machine Learning models it is always worth to check the `Baseline`. You will get the intuition about your data and problem that you are solving.
 
-Red flags during training the Machine Learning models that warns you that your data might be random (or with some errors):
+Red flags :triangular_flag_on_post: during training Machine Learning models that warn you that your data might be random (or with some errors):
 
-- The `Baseline` algorithm outperforms other complex ML algorithms.
+- The `Baseline` algorithm outperforms complex ML algorithms.
 - The percentage difference between the best model and the `Baseline` model is very small (smaller than `5%`).
 - Models are overfitting very fast.
 - All features are dropped during the feature selection procedure.
