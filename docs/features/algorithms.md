@@ -406,9 +406,80 @@ The AutoML is using [`LightGBM`](https://lightgbm.readthedocs.io/en/latest/) pac
 
 ## Neural Network
 
+For `Neural Network` algorithm the [Keras](https://keras.io) and [Tensorflow](https://www.tensorflow.org/) are used. The same set of hyperparameters are used for all Machine Learning tasks (classification and regression). There is difference in output neurons type and loss function depending on ML task. 
+
+!!! note "`Neural Network` hyperparameters"
+    The allowed hyperparameters values:
+    ```python
+    nn_params = {
+        "dense_layers": [2],
+        "dense_1_size": [16, 32, 64],
+        "dense_2_size": [4, 8, 16, 32],
+        "dropout": [0, 0.1, 0.25],
+        "learning_rate": [0.01, 0.05, 0.08, 0.1],
+        "momentum": [0.85, 0.9, 0.95],
+        "decay": [0.0001, 0.001, 0.01],
+    }
+    ```
+    The default hyperparameters:
+    ```python
+    default_nn_params = {
+        "dense_layers": 2,
+        "dense_1_size": 32,
+        "dense_2_size": 16,
+        "dropout": 0,
+        "learning_rate": 0.05,
+        "momentum": 0.9,
+        "decay": 0.001,
+    }
+    ```
+
+### Binary Classification
+
+- There is single output neuron with `sigmoid` activation.
+- The loss function: `binary_crossentropy`.
+
+### Multi-class Classification
+
+- The number of output neurons is equal to the number of unique classes in the target. The activation in the output layer is `softmax`.
+- The loss function: `categorical_crossentropy`.
+
+### Regression
+
+- There is single output neuron with `linear` activation.
+- The loss function: `mean_squared_error`.
+
 ## Nearest Neighbor
+
+The `Nearest Neighbor` algorithm is using scikit-learn: 
+
+- the [`KNeighborsClassifier`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html) for classification,
+- the [`KNeighborsRegressor`](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor) for regression.
+
+!!! note "`Nearest Neighbor` hyperparameters"
+    The allowed hyperparameters values:
+    ```python
+    knn_params = {
+        "n_neighbors": [3, 5, 7], 
+        "weights": ["uniform", "distance"]
+    }
+    ```
+    The default hyperparameters:
+    ```python
+    default_params = {
+        "n_neighbors": 5, 
+        "weights": "uniform"
+    }
+    ```
 
 ## Stacked Algorithm
 
+The stacked algorithms are built with predictions from previous (unstacked) models. The stacked algorithms are reusing hyperparameters of already found good models.
+
+- During the stacking up to 10 best models from each algorithm are used, except `Baseline`.
+- The **out-of-folds** predictions are used to construct extended training data. The stacking only works for `validation_strategy="kfold"` (k-fold cross-validation).
+- The stacked model can be only: `Xgboost`, `LightGBM`, `CatBoost`. The AutoML algorithm selects the best models from **unstacked** `Xgboost`, `LightGBM`, `CatBoost` and reuses its hyperparameters to train **stacked** models.
+
 ## Ensemble
 
+The `Ensemble` algorithm is implemented based on [Caruana article](http://www.cs.cornell.edu/~alexn/papers/shotgun.icml04.revised.rev2.pdf). The `Ensemble` is using average method, which does a greedy search over all models and try to add (with repetition) a model to the ensemble to improve ensemble's performance. The ensemble performance is computed based on out-of-folds predictions of used models
