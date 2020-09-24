@@ -46,7 +46,7 @@ I will show you step by step what above code produced based on the training data
 The default `mode` for [`mljar-supervised`](https://github.com/mljar/mljar-suerpvised) is `Explain`, which means that:
 
 - there will be used `75% / 25%` for train / test split for model training and evaluation,
-- there will be trained following algorithms: `Baseline`, `Decision Tree`, `Linear`, `Random Forest`, `Xgboost`, `Neural Netowrk` and `Ensemble`,
+- there will be trained following algorithms: `Baseline`, `Decision Tree`, `Linear`, `Random Forest`, `Xgboost`, `Neural Network`, and `Ensemble`,
 - the [Automated Exploratory Data Analysis](/features/eda/) will be done,
 - the [full explanations](/features/explain/) will be created.
 
