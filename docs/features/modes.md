@@ -13,7 +13,7 @@ There are 3 built-in modes available in `AutoML`:
 ||**Explain**|**Perform**|**Compete**|
 || | ***Algorithms***| |
 |Baseline|:fontawesome-solid-check:{: .green } |||
-|Linear|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
+|Linear|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } ||
 |Decision Tree|:fontawesome-solid-check:{: .green } ||:fontawesome-solid-check:{: .green } |
 |Random Forest|:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |:fontawesome-solid-check:{: .green } |
 |Extra Trees|||:fontawesome-solid-check:{: .green } |
