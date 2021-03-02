@@ -14,7 +14,7 @@ The learning curves show the evaluation metric values in each iteration of the t
 
 ## `Decision Tree` Visualization
 
-The visualization of the `Decision Tree` is craeted if `explain_level >= 1`. The [`dtreeviz`](https://github.com/parrt/dtreeviz) is used to plot the tree.
+The visualization of the `Decision Tree` is created if `explain_level >= 1`. The [`dtreeviz`](https://github.com/parrt/dtreeviz) is used to plot the tree.
 
 ![Decision Tree visualization](https://raw.githubusercontent.com/mljar/mljar-examples/1295c77b6ac617b8d91ea7d8fffc6cd4c2605701/Income_classification/AutoML_1/2_DecisionTree/learner_1_tree.svg)
 
