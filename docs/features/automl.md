@@ -1,9 +1,9 @@
 # Steps of AutoML
 
-The training of `mljar-supervised` AutoML is divided into steps. Each step represents the actions that are common in the process of searching best performing Machine Learning model in the ML pipeline. Below are described steps of AutoML. 
+The training of `mljar-supervised` AutoML is divided into steps. Each step represents the actions that are common in the process of searching for the best performing Machine Learning model in the ML pipeline. Below are described steps of AutoML. 
 
 !!! note "Names of steps (`fit_level`)"
-    In the documentation there are used exactly the same names as used in the code to describe each of the training level.
+    The documentation uses exactly the same names as used in the code to describe each training level.
     You can see these names in the terminal during `AutoML` training.
 
 
@@ -15,9 +15,9 @@ The first step in the `AutoML` training is to check the simplest algorithms to g
 - `Decision Tree`,
 - `Linear`.
 
-There is trained one model for each of the algorithm. By analyzing results of each model you can learn a lot about analyzed dataset:
+One model is trained for each of the algorithms. By analyzing results of each model you can learn a lot about the analyzed dataset:
 
-- `Baseline` will provide the basline result without complex ML involved. 
+- `Baseline` will provide the baseline result without complex ML involved. 
     - `Baseline` returns the most frequent label from the training data for classification tasks.
     - `Baseline` returns the mean of the target from training data for regression tasks.
     - If further results are much better than `Baseline` results, **it justify the use of Machine Learning**. Take a look at [tutorial with classification of random data](/tutorials/random/).
@@ -28,7 +28,7 @@ The models in this step should be quickly trained, so you will get fast intuitio
 
 ## `default_algorithms`
 
-In this step, the models are trained with default hyperparameters. Regardless of the data, the hyperparameters are always used the same for each algorithm. In this step, you can compare the results of default models from other datasets and get intuition about your problem complexity.
+In this step, the models are trained with default hyperparameters. Regardless of the data, the hyperparameter values used are always the same for each algorithm. In this step, you can compare the results of default models from other datasets and get intuition about your problem complexity.
 
 The following algorithms can be fitted in this step:
 
@@ -40,11 +40,11 @@ The following algorithms can be fitted in this step:
 - `Neural Network`,
 - `Nearest Neighbors`.
 
-There is exactly one model fitted for each algorithm in this step. (Each algorithm has one set of default hyperparameters for each ML task).
+There is exactly one model fitted for each algorithm in this step. (Each algorithm has one set of default hyperparameter values for each ML task).
 
 ## `not_so_random`
 
-This step performs Random Search over defined set of hyperparameters (that's why the name). 
+This step performs Random Search over defined set of hyperparameters (hence the name). 
 
 The following algorithms can be fitted in this step:
 
@@ -56,7 +56,7 @@ The following algorithms can be fitted in this step:
 - `Neural Network`,
 - `Nearest Neighbors`.
 
-For each algorithm there are tuned up to `start_random_models-1` models (there is `-1` because one model is used in the `default_algorithms` step). The exact number cannot be given in advance, because in this step there can be models draw with the same hyperparameters set, in such case the duplicate models are omitted. 
+For each algorithm up to `start_random_models-1` models are tuned (there is `-1` because one model is used in the `default_algorithms` step). The exact number cannot be given in advance, because in this step there can be models drawn with the same hyperparameters set, in such case the duplicate models are omitted. 
 
 For example, if you set:
 
@@ -101,7 +101,7 @@ There is trained `1` model for each algorithm. The hyperparameters used in the m
 
 ## `insert_random_feature`
 
-This step is a first part of Feature Selection procedure. Please refer to [Features Selection](/features/features_selection/) section in the documentation for details.
+This step is a first part of Feature Selection procedure. Please refer to the [Features Selection](/features/features_selection/) section in the documentation for details.
 
 During this step:
 
@@ -116,7 +116,7 @@ During this step:
 
 ## `features_selection`
 
-This step is a second part of Feature Selection procedure. Please refer to [Features Selection](/features/features_selection/) section in the documentation for details.
+This step is a second part of Feature Selection procedure. Please refer to the [Features Selection](/features/features_selection/) section in the documentation for details.
 
 In this step:
 
@@ -145,9 +145,9 @@ In the `hill_climbing` step the fine tuning of models is done :muscle:.
 
 There can be several `hill_climbing` steps, they are described with counter at the end of step name. For example, `hill_climbing_1`, `hill_climbing_2`, ... The number of `hill_climbing` steps is controlled with `hill_climbing_steps` parameter in `AutoML` constructor.
 
-In each `hill_climbing` step, the top performing models from each algorithm and further tuned. The number of selected top models is controlled with `top_models_to_improve` parameter from `AutoML.__init__()`. 
+In each `hill_climbing` step, the top performing models from each algorithm are tuned further. The number of selected top models is controlled with `top_models_to_improve` parameter from `AutoML.__init__()`. 
 
-If model is selected for further tuning, then only one, randomly selected hyperparameter from its setting is changed. The selected hyperparameter will be changed in two directions. 
+If a model is selected for further tuning, then only one randomly selected hyperparameter from its setting is changed. The selected hyperparameter will be changed in two directions. 
 
 !!! example "How are hyperparameters fine tuned?"
     Example:
