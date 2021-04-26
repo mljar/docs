@@ -21,10 +21,10 @@ If you need some features, please add comments in the corresponding Github issue
 * [ ] Blueprint for model  ([GitHub issue #123](https://github.com/mljar/mljar-supervised/issues/123))
 * [ ] New validation strategies ([GitHub issue #160](https://github.com/mljar/mljar-supervised/issues/160), [#101](https://github.com/mljar/mljar-supervised/issues/101))
 
-## To be disscused
+## To be discussed
 
 * [ ] New ML task: Anomaly detection
 * [ ] New ML task: Time series 
 * [ ] New ML task: Recommendations
-* [ ] Add `deploy()` method which deploy `AutoML` as a web service and make predictions available as REST API ([GitHub issue #54](https://github.com/mljar/mljar-supervised/issues/54))
+* [ ] Add `deploy()` method, which deploys `AutoML` as a web service and make predictions available as REST API ([GitHub issue #54](https://github.com/mljar/mljar-supervised/issues/54))
 
