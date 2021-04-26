@@ -2,9 +2,9 @@
 
 The tasks in the roadmap are not in the order in which they will be added to the code.
 
-If you would like to see some feature not present in the roadmap, please feel free to add a [new GitHub issue](https://github.com/mljar/mljar-supervised/issues/new).
+If you would like to see some features not present in the roadmap, please feel free to add a [new GitHub issue](https://github.com/mljar/mljar-supervised/issues/new).
 
-If yoy need some feature, please add comments in the corresponding Github issue. It will help to prioritize what is needed.
+If you need some features, please add comments in the corresponding Github issue. It will help to prioritize what is needed.
 
 ## Near future
 
