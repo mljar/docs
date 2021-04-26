@@ -9,23 +9,23 @@ Below are described ways to help.
 
 ## Star `mljar-supervised` in GitHub
 
-You can give a star for `mljar-supervised` repository by clicking a star :star: at the top right.
+You can give a star for the `mljar-supervised` repository by clicking a star :star: at the top right.
 
 [https://github.com/mljar/mljar-supervised](https://github.com/mljar/mljar-supervised) 
 
 <iframe src="https://ghbtns.com/github-btn.html?user=mljar&repo=mljar-supervised&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 
-By adding a star, other users will be able to find this package more easily and see that it has been already useful for others. It helps!
+By adding a star, other users will be able to find this package more easily and see that it has already been useful for others. It helps!
 
-## Watch the new releases in GitHub
+## Watch the new releases on GitHub
 
-To be notified by email about new releases
+To be notified by email about new releases.
 
 [https://github.com/mljar/mljar-supervised](https://github.com/mljar/mljar-supervised) 
 
 <iframe src="https://ghbtns.com/github-btn.html?user=mljar&repo=mljar-supervised&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 
-You can select "Releases only" in "Watch" button (top right corner).
+You can select "Releases only" in the "Watch" button (top right corner).
 
 ## Connect in social media 
 
@@ -36,7 +36,7 @@ You can select "Releases only" in "Watch" button (top right corner).
 
 ## Create GitHub issues
 
-If you found a bug :bug: or have a problem :construction: with `mljar-supervised` please create a [GitHub issue](https://github.com/mljar/mljar-supervised/issues/new). You can also suggest a new features there! :+1:
+If you found a bug :bug: or have a problem :construction: with `mljar-supervised`, please create a [GitHub issue](https://github.com/mljar/mljar-supervised/issues/new). You can also suggest new features there! :+1:
 
 You can also try to help others with their [issues](https://github.com/mljar/mljar-supervised/issues).
 
@@ -52,11 +52,11 @@ You can create a Pull Request (PR), for:
 
 You can join our Slack channel by clicking this [invite link](https://mljar-supervised.slack.com/join/shared_invite/zt-gkhfsvhw-H6LMKxxV5adeTmn9V7nbZw#/).
 
-You can discuss there Machine Learning topics, ask ML and data questions and watch development of AutoML.
+It's a place to discuss Machine Learning topics, ask ML and data questions and watch the development of AutoML.
 
 ## Write a tutorial! :books: :book:
 
-You can write a tutorial for others about how are you using `AutoML`. You can publish it on:
+You can write a tutorial for others about how you are using `AutoML`. You can publish it on:
 
 - MLJAR's [blog](https://mljar.com/blog) - please let me know if interested
 - [Towards Data Science](https://towardsdatascience.com/)
@@ -64,4 +64,4 @@ You can write a tutorial for others about how are you using `AutoML`. You can pu
 - [FreeCodeCamp](https://www.freecodecamp.org)
 - Your blog or website
 
-When you have post ready I would love to read it and give you a feedback. I will also share it in my social accounts and paste a link in the documentation. :+1:
+When the post is ready I would love to read it and give you feedback. I will also share it in my social accounts and paste a link in the documentation. :+1:
