@@ -73,7 +73,7 @@ nav:
   - How can you help?: help.md
   - Contributing: contributing.md
   - AutoML API: api.md
-  - Roadmad: roadmap.md
+  - Roadmap: roadmap.md
   - Tutorials:
     - Classify Titanic Passangers: tutorials/titanic.md
     - Classify Random Data: tutorials/random.md
