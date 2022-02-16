@@ -47,20 +47,9 @@ The default `mode` for [`mljar-supervised`](https://github.com/mljar/mljar-suerp
 
 - there will be used `75% / 25%` for train / test split for model training and evaluation,
 - there will be trained following algorithms: `Baseline`, `Decision Tree`, `Linear`, `Random Forest`, `Xgboost`, `Neural Network`, and `Ensemble`,
-- the [Automated Exploratory Data Analysis](/features/eda/) will be done,
 - the [full explanations](/features/explain/) will be created.
 
 All results created during `AutoML` training will be saved to the hard drive. There will be **Markdown report** in the `README.md` file for each model available (no black-boxes!).
-
-## Automated EDA
-
-The ditribution plots are created for all features. The plots are available in the Markdown [report](https://github.com/mljar/mljar-examples/tree/master/Titanic_Classification/AutoML_3/EDA).
-
-The few examples of plots from EDA:
-
-![Age distribution](https://raw.githubusercontent.com/mljar/mljar-examples/master/Titanic_Classification/AutoML_3/EDA/Age.png)
-![Name distribution](https://raw.githubusercontent.com/mljar/mljar-examples/master/Titanic_Classification/AutoML_3/EDA/Name.png)
-![Pclass distribution](https://raw.githubusercontent.com/mljar/mljar-examples/master/Titanic_Classification/AutoML_3/EDA/Pclass.png)
 
 ## The AutoML leaderboard report
 
@@ -205,7 +194,6 @@ Accuracy: 77.99%
 
 The `AutoML` was used to analyze Titanic dataset. I hope you see advantages of AutoML (with `2` lines of code):
 
-- the Automated EDA were performed,
 - all needed preprocessing were done automatically: insert missing values, convert categoricals, convert text to numbers.
 - there were checked many different algorithms,
 - all results are saved to the hard drive, Markdown reports are available for all models.
