@@ -8,7 +8,7 @@ The procedure to find Golden Features:
 - If there is more than `250,000` pairs then subsample them randomly to `250,000`.
 - For each pair of features construct a new feature with substract or division operators. 
 - Based on the new feature train a `Decision Tree` with `max_depth = 3` (using only one feature). 
-- For training there are used up to `2,500` samples radnomly selected from the dataset. The same for testing, also up to `2,500` samples randomly selected.
+- For training there are used up to `2,500` samples randomly selected from the dataset. The same for testing, also up to `2,500` samples randomly selected.
 - There is computed a score on test samples for each feature. The score is `logloss` metric for classification tasks, and `mean squared error` for regression tasks.
 - Newly generated features are sorted based on the score (the lower score the better).
 - As a Golden Features there are selected new features with smallest score values and are inserted into the training data.
