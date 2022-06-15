@@ -49,7 +49,7 @@ There are 3 built-in modes available in `AutoML`:
 |Models with **not_so_random** hyperparemeters | `0` |`4`|`9`|
 |`hill_climbing` steps | `0`|`2`|`2`|
 |Top models imporoved in each `hill_climbing` step | `0`|`2`|`3`|
-|**Total models** tuned for each algorithm[^1] | `1`|about `9`[^2]|about `16`[^2]|
+|**Total models** tuned for each algorithm[^1] | `1`|about `13`[^2]|about `22`[^2]|
 
 
 ## Custom modes
