@@ -82,7 +82,7 @@ automl = AutoML(
 - It will train models with `CatBoost`, `Xgboost` and `LightGBM` algorithms.
 - Each model will be trained for 30 minutes (`30*60` seconds). `total_time_limit` is not set.
 - There will be trained about `10+3*3*2=28` unstacked models and `10` stacked models for each algorithm. (There is stacked up to `10` models for each algorithm)
-- There will trained `Ensemble` based on unstacked models and `Ensemble_Stacked` from unstacked and stackd models.
+- There will trained `Ensemble` based on unstacked models and `Ensemble_Stacked` from unstacked and stacked models.
 - In total there will be about `3*28+2=86` models trained.
 - `explain_level=0` means that there will be only learning curves saved. No other explanations will be computed.
 
