@@ -77,3 +77,7 @@ nav:
   - Tutorials:
     - Classify Titanic Passangers: tutorials/titanic.md
     - Classify Random Data: tutorials/random.md
+    - Fairness Binary Classification: tutorials/fairness-binary-classification.md
+    - Fairness Multiclass Classification: tutorials/fairness-multiclass-classification.md
+    - Fairness Regression: tutorials/fairness-regression.md
+        
