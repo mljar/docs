@@ -1,3 +1,5 @@
+Moved to https://github.com/mljar/mljar-supervised
+
 # Docs
 Docs for mljar-supervised available at https://supervised.mljar.com
 
